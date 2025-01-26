@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2e2e2e, #121212); /* Dark background */
+    color: #fff; /* Light text color for readability */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Darker shadow */
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    max-width: 1000px; /* Set a maximum width to avoid stretching */
+    padding: 20px;
+  }
+
+  .converter {
+    width: 100%;
+    max-width: 600px;
+    text-align: left; /* Align text to the left for input and button */
+  }
+
+  input {
+    width: 100%;
+    max-width: 450px;
+    padding: 18px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    transition: all 0.3s ease;
+  }
+
+  input:focus {
+    outline: none;
+    border: 1px solid #00bcd4;
+    background-color: #444;
+  }
+
+  button {
+    padding: 13px 19px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0097a7;
+    transform: scale(1.08);
+  }
+
+  p#result {
+    margin-top: 45px;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 25px;
+    max-width: 450px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+  }
+
+  p#result:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Table Styles */
+  .table-wrapper {
+    max-height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    color: #fff;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #555;
+  }
+
+  th {
+    background-color: #333;
+  }
+
+  td {
+    background-color: #444;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    input, button {
+      font-size: 1.8rem;
+      padding: 15px;
+    }
+
+    p#result {
+      font-size: 1.2rem;
+    }
+
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .table-wrapper {
+      margin-top: 30px;
+      width: 90%;
+    }
+
+    table {
+      font-size: 1rem;
+    }
+
+    th, td {
+      padding: 6px;
+    }
+  }
