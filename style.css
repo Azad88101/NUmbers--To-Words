@@ -11,6 +11,18 @@ body {
     align-items: center;
     flex-direction: column;
   }
+  h1::selection{
+    background-color: black;
+  }
+  h2::selection{
+    background-color: black;
+  }
+  p::selection{
+    background-color: black;
+  }
+  table::selection{
+    background-color: black;
+  }
 
   h1 {
     font-size: 2.8rem;
